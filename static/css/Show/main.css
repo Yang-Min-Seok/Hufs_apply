@@ -1,0 +1,64 @@
+#main{
+    
+}
+#main .wrap{
+    margin-top: 50px;
+    display: flex;
+    height: 800px;
+}
+#main .wrap .hello{
+    width: 50%;
+    background-image: url(/static/images/left.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#main .wrap .hello h3{
+    color:#fff;
+    font-size: 70px;
+    line-height: 1.5;
+}
+#main .wrap .hello h3:nth-child(1){
+    margin-bottom: 50px;
+}
+#main .wrap .result{
+    width: 50%;
+    background-color: #000;
+    color:#fff;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#main .wrap .result h3{
+    font-size: 40px;
+    line-height: 1.8;
+}
+#main .wrap .result form:nth-child(5){
+    margin-top: 50px;
+}
+#main .wrap .result form:nth-child(6){
+    margin-top: 30px;
+}
+#main .wrap .result form p{
+    
+}
+#main .wrap .result form p input{
+    width: 40%;
+    height: 50px;
+    font-size: 20px;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+    transition: all 0.7s;
+}
+#main .wrap .result form p input:hover{
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}

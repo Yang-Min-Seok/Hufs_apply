@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply</title>
+
+    <!-- font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+    </style>
+
+    <!-- css -->
+    <link rel="stylesheet" href="/static/css/common.css">
+    <link rel="stylesheet" href="/static/css/Apply/main.css">
+
+</head>
+<body>
+    <section id="main">
+        <div class="wrap">
+            
+            <div class="hello">
+                <h3>{{ name }}님,</h3>
+                <h3>안녕하세요!</h3>
+            </div>
+
+            <div class="choose">
+                <h3>희망 학과에</h3>
+                <h3>지원해 보세요!</h3>
+                <h3>언제든 바꿀 수 있습니다!</h3>
+                <form action="/apply" method="POST"> 
+                    <p> 전공 : 
+                        <select name="major">
+                            <option value="#">전공 / 반영방식('평점평균 100%'가 아닐 시 확인 요망)</option>
+                            <option value="ELLT">ELLT(구 영어학과) / 평점평균 100%</option>
+                            <option value="영미문학문화학과">영미문학문화학과 / 평점평균 100%</option>
+                            <option value="EICC">EICC(구 영어통번역학과) / 평점평균 100%</option>
+                            <option value="영어학부">영어학부 / 평점평균 100%</option>
+                            <option value="노어과">노어과 / 확인요망</option>
+                            <option value="프랑스어학부">프랑스어학부 / 평점평균 100%</option>
+                            <option value="독일어과">독일어과 / 평점평균 100%</option>
+                            <option value="스페인어과">스페인어과 / 평점평균 100%</option>
+                            <option value="이탈리아어과">이탈리아어과 / 평점평균 100%</option>
+                            <option value="포르투칼어과">포르투칼어과 / 평점평균 100%</option>
+                            <option value="네덜란드어과">네덜란드어과 / 평점평균 100%</option>
+                            <option value="스칸디나비아어과">스칸디나비아어과 / 평점평균 100%</option>
+                            <option value="베트남어과">베트남어과 / 확인요망</option>
+                            <option value="말레이인도네시아어과">말레이인도네시아어과 / 평점평균 100%</option>
+                            <option value="아랍어과">아랍어과 / 평점평균 100%</option>
+                            <option value="태국어과">태국어과 / 평점평균 100%</option>
+                            <option value="인도어과">인도어과 / 평점평균 100%</option>
+                            <option value="터키아제르바이잔어과">터키아제르바이잔어과 / 평점평균 100%</option>
+                            <option value="페르시아어이란학과">페르시아어이란학과 / 평점평균 100%</option>
+                            <option value="몽골어과">몽골어과 / 평점평균 100%</option>
+                            <option value="중국언어문화학부">중국언어문화학부 / 평점평균 100%</option>
+                            <option value="중국외교통상학부">중국외교통상학부 / 평점평균 100%</option>
+                            <option value="일본언어문화학부">일본언어문화학부 / 평점평균 100%</option>
+                            <option value="융합일본지역학부">융합일본지역학부 / 평점평균 100%</option>
+                            <option value="정치외교학과">정치외교학과 / 확인요망</option>
+                            <option value="행정학과">행정학과 / 확인요망</option>
+                            <option value="미디어커뮤니케이션학부">미디어커뮤니케이션학부 / 평점평균 100%</option>
+                            <option value="국제통상학과">국제통상학과 / 평점평균 100%</option>
+                            <option value="경제학부">경제학부 / 평점평균 100%</option>
+                            <option value="경영학부">경영학부 / 확인요망</option>
+                            <option value="영어교육과">영어교육과 / 평점평균 100%</option>
+                            <option value="프랑스어교육과">프랑스어교육과 / 평점평균 100%</option>
+                            <option value="독일어교육과">독일어교육과 / 평점평균 100%</option>
+                            <option value="한국어교육과">한국어교육과 / 평점평균 100%</option>
+                            <option value="중국어교육과">중국어교육과 / 평점평균 100%</option>
+                            <option value="교육학전공">교육학전공 / 평점평균 100%</option>
+                            <option value="체육학전공">체육학전공 / 평점평균 100%</option>
+                            <option value="국제학부">국제학부 / 평점평균 100%</option>
+                            <option value="LD학부">LD학부 / 확인요망</option>
+                            <option value="LD학부">LT학부 / 확인요망</option>
+                            <option value="외국어로서의한국어교육전공">외국어로서의한국어교육전공 / 확인요망</option>
+                            <option value="외국어로서의한국어통번역전공">외국어로서의한국어통번역전공 / 확인요망</option>
+                            <option value="국가리더전공">국가리더전공 / 평점평균 100%</option>
+                            <option value="언어와공학전공">언어와공학전공 / 평점평균 100%</option>
+                            <option value="디지털인문한국학전공">디지털인문한국학전공 / 평점평균 100%</option>
+                            <option value="지역경제개발전공">지역경제개발전공 / 평점평균 100%</option>
+                            <option value="보험계리학전공">보험계리학전공 / 평점평균 100%</option>
+                            <option value="AI융합전공">AI융합전공(세부트랙) / 평점평균 100%</option>
+                            <option value="EU">EU / 평점평균 100%</option>
+                            <option value="동북아외교통상">동북아외교통상 / 평점평균 100%</option>
+                            <option value="브릭스">브릭스 / 평점평균 100%</option>
+                            <option value="문화콘텐츠">문화콘텐츠 / 평점평균 100%</option>
+                            <option value="세계문화예술경영">세계문화예술경영 / 평점평균 100%</option>
+                        </select>
+                    </p>  
+                    <p>
+                        GPA : <input type="text" name="GPA" placeholder="ex) 3.8"> / 4.5
+                    </p>
+                    
+                    <p>* 1학년 2학기에 재학중인 경우, 1학년 1학기까지 확정된 GPA를 적어주시기 바랍니다.</p>
+
+                    <p>
+                        <input type="submit" value="지원하기">
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- 서버로부터 받은 메세지 -->
+    {%with messages = get_flashed_messages()%}
+        {%if messages %}
+            <script type="text/javascript">alert("{{messages[0]}}");</script>
+        {%endif%}
+    {%endwith%}
+</body>
+</html>

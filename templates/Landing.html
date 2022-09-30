@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hufs Apply</title>
+    
+    <!-- font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+    </style>
+    
+    <!-- css -->
+    <link rel="stylesheet" href="/static/css/common.css">
+    <link rel="stylesheet" href="/static/css/Landing/intro.css">
+
+
+</head>
+<body>
+    <!-- intro -->
+    <section id="intro">
+        <div class="wrap">
+            
+            <!-- left -->
+            <div class="left">
+                <h3>Hufs</h3>
+                <h3>Apply</h3>
+                <h4>한국외대 이중전공</h4>
+                <h4>모의지원 서비스</h4>
+                <p>©2022 kurooru allrights reserved.</p>
+            </div>
+
+            <!-- right -->
+            <div class="right">
+                <h3>현재 "{{ total }}" 명이 서비스를 이용중입니다.</h3>
+                
+                <form action="/" method="post">
+                    <p><input type="text" name="id" placeholder="ID(학번)"></p>
+                    <p><input type="password" name="password" placeholder="Password"></p>
+                    <p><input type="submit" value="로그인"></p>
+                </form>
+                
+                <form action="/signin">
+                    <p><input type="submit" value="회원가입"></p>
+                </form>
+            </div>
+
+        </div>
+    </section>
+    <!-- 서버로부터 받은 메세지 -->
+    {%with messages = get_flashed_messages()%}
+        {%if messages %}
+            <script type="text/javascript">alert("{{messages[0]}}");</script>
+        {%endif%}
+    {%endwith%}
+</body>
+</html>

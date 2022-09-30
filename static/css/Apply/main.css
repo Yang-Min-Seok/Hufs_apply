@@ -1,0 +1,91 @@
+#main{
+    
+}
+#main .wrap{
+    margin-top: 50px;
+    display: flex;
+    height: 800px;
+}
+#main .wrap .hello{
+    width: 50%;
+    background-image: url(/static/images/left.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#main .wrap .hello h3{
+    color:#fff;
+    font-size: 70px;
+    line-height: 1.5;
+}
+#main .wrap .hello h3:nth-child(1){
+    margin-bottom: 50px;
+}
+#main .wrap .choose{
+    width:50%;
+    background-color: #000;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#main .wrap .choose h3{
+    color:#fff;
+    font-size: 50px;
+    line-height: 1.5;
+    text-align: center;
+}
+#main .wrap .choose form{
+    margin-top: 20px;
+}
+#main .wrap .choose form p{
+    color:#fff;
+    line-height: 3;
+    text-align: center;
+}
+#main .wrap .choose form p:nth-child(1){
+    font-size: 20px;
+}
+#main .wrap .choose form p:nth-child(1) select{
+    height: 35px;
+    width: 60%;
+    font-size: 15px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+#main .wrap .choose form p:nth-child(2){
+    font-size: 20px;
+}
+#main .wrap .choose form p:nth-child(2) input{
+    width: 13%;
+    font-size: 15px;
+    height: 35px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+#main .wrap .choose form p:nth-child(3){
+    font-size: 12px;
+    text-align: center;
+}
+#main .wrap .choose form p:nth-child(4){
+    
+}
+#main .wrap .choose form p:nth-child(4) input{
+    height:40px;
+    width:30%;
+    font-size: 20px;
+    background-color: #000;
+    color:#fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    transition: all 0.7s;
+}
+#main .wrap .choose form p:nth-child(4) input:hover{
+    background-color: #fff;
+    color:#000;
+    cursor: pointer;
+}

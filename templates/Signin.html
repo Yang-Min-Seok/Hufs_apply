@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+
+    <!-- font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+    </style>
+
+    <!-- css -->
+    <link rel="stylesheet" href="/static/css/common.css">
+    <link rel="stylesheet" href="/static/css/Signin/info.css">
+
+</head>
+<body>
+    <!-- info -->
+    <section id="info">
+        <div class="wrap">
+            <form action="/signin" method="post">
+                <p>ID(학번) : <input type="text" name="new_id" placeholder="ex) 201802144"></p>
+                <p>이름 : <input type="text" name="new_name" placeholder="ex) 홍길동"></p>
+                <p>비밀번호 : <input type="password" name="new_password" placeholder="비밀번호"></p>
+                <p>비밀번호 확인 : <input type="password" name="check_password" placeholder="비밀번호 확인"></p>
+                <p><input type="submit" value="등록하기"></p>
+            </form>
+        </div>
+    </section>
+    <!-- 서버로부터 받은 메세지 -->
+    {%with messages = get_flashed_messages()%}
+        {%if messages %}
+            <script type="text/javascript">alert("{{messages[0]}}");</script>
+        {%endif%}
+    {%endwith%}
+</body>
+</html>
