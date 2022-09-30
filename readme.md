@@ -15,7 +15,8 @@
 ## 구성도
 
 ###서비스 구성도
-<img width="1173" alt="스크린샷 2021-10-10 오후 10 11 25" src="https://user-images.githubusercontent.com/72256238/137921578-161fc5d5-b295-4a07-8830-68b6377b4fff.png">
+![IMG_3D12D7199154-1](https://user-images.githubusercontent.com/83502596/193296472-9822c3d3-a530-47f5-82b9-d677dac977be.jpeg)
+
 
 ## 주요 기술
 ■ Flask : Back-End 개발
