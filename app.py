@@ -131,14 +131,14 @@ def signin():
         # 9자리가 아니면
         elif len(id) != 9:
             print('학번 형식이 잘못되었습니다.(9자리가 아님)')
-            flash('학번 형식이 잘못되었습니다.(9자리가 아님)')
+            flash('학번 형식이 잘못되었습니다.')
             # 재연결
             return redirect('/signin')
         
         # '20'으로 시작하지 않으면,
         elif id[0:2] != '20':
             print('학번 형식이 잘못되었습니다.(20으로 시작하지 않음)')
-            flash('학번 형식이 잘못되었습니다.(20으로 시작하지 않음)')
+            flash('학번 형식이 잘못되었습니다.')
             # 재연결
             return redirect('/signin')
 
@@ -148,8 +148,8 @@ def signin():
         # name 유효성 검사
         # 아무것도 안적으면
         if not len(name):
-            print('이름을 적어주세요')
-            flash('이름을 적어주세요')
+            print('이름을 적어주세요.')
+            flash('이름을 적어주세요.')
             # 재연결
             return redirect('/signin')
         
@@ -161,8 +161,8 @@ def signin():
         # password 유효성 검사
         # 아무것도 안적으면
         if not len(password) or not len(check_password):
-            print('비밀번호 혹은 비밀번호확인을 적어주세요')
-            flash('비밀번호 혹은 비밀번호확인을 적어주세요')
+            print('비밀번호 혹은 비밀번호확인을 적어주세요.')
+            flash('비밀번호 혹은 비밀번호확인을 적어주세요.')
             # 재연결
             return redirect('/signin')
 
