@@ -12,9 +12,14 @@
     /* 배경색 */
     background-color: #000;
 }
+#info .wrap h3{
+    color:#fff;
+    font-size:40px;
+    margin-bottom: 30px;
+}
 #info .wrap form{
     /* 너비 지정 */
-    width:30%;
+    width:50%;
     text-align: right;
     margin:0 auto;
 }
@@ -23,16 +28,16 @@
     color:#fff;
 }
 #info .wrap form p:nth-child(1){
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 #info .wrap form p:nth-child(2){
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 #info .wrap form p:nth-child(3){
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 #info .wrap form p:nth-child(4){
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 #info .wrap form p:nth-child(5){
     text-align: center;
@@ -48,7 +53,7 @@
     border-radius: 10px;
 }
 #info .wrap form p:nth-child(5) input{
-    width:60%;
+    width:40%;
     font-size: 20px;
     height:40px;
     padding:0;
