@@ -29,11 +29,13 @@
             </form>
         </div>
     </section>
+    
     <!-- 서버로부터 받은 메세지 -->
     {%with messages = get_flashed_messages()%}
         {%if messages %}
             <script type="text/javascript">alert("{{messages[0]}}");</script>
         {%endif%}
     {%endwith%}
+    
 </body>
 </html>
