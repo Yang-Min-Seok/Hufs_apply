@@ -128,18 +128,10 @@ def signin():
             flash('학번을 적어주세요')
             # 재연결
             return redirect('/signin')
-        # 9자리가 아니면
-        elif len(id) != 9:
-            print('학번 형식이 잘못되었습니다.(9자리가 아님)')
-            flash('학번 형식이 잘못되었습니다.')
-            # 재연결
-            return redirect('/signin')
-        # '20'으로 시작하지 않으면,
-        elif id[0:2] != '20':
-            print('학번 형식이 잘못되었습니다.(20으로 시작하지 않음)')
-            flash('학번 형식이 잘못되었습니다.')
-            # 재연결
-            return redirect('/signin')
+        # hufs.ac.kr형식 이아니면,
+        elif id[-10:-1] != 'hufs.ac.k':
+            print('아이디 형식을 확인해주세요(ㅇㅇㅇ@hufs.ac.kr)')
+            flash('아이디 형식을 확인해주세요(ㅇㅇㅇ@hufs.ac.kr)')
 
         # name
         name = request.form['new_name']
