@@ -181,6 +181,7 @@ def signin():
                 print('회원 등록이 완료 되었습니다.')
                 flash('회원 등록이 완료 되었습니다.')
                 print(id, name)
+
                 # 회원 정보에 추가
                 userinfo.append({
                     'user_id': id,
@@ -237,6 +238,9 @@ def apply():
             return redirect('/apply')
         
         # 통과했으면,
+        print('지원 완료',major,GPA)
+        flash('모의 지원이 성공적으로 완료되었습니다. 빠른 시일 내에 인증 메일을 보내 주시기 바랍니다.')
+        
         # id 뽑기
         id = session.get('user_id')
         
