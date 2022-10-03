@@ -16,7 +16,7 @@ def landing():
     if session.get('logged_in'):
         print('로그인 기록이 존재합니다.')
         flash('로그인 기록이 존재합니다.')
-        
+
         # show.html로
         return render_template('Show.html')
     
@@ -134,7 +134,6 @@ def signin():
             flash('학번 형식이 잘못되었습니다.')
             # 재연결
             return redirect('/signin')
-        
         # '20'으로 시작하지 않으면,
         elif id[0:2] != '20':
             print('학번 형식이 잘못되었습니다.(20으로 시작하지 않음)')
