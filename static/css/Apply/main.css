@@ -70,9 +70,20 @@
     text-align: center;
 }
 #main .wrap .choose form p:nth-child(4){
-    
+    font-size: 12px;
+    text-align: center;
 }
-#main .wrap .choose form p:nth-child(4) input{
+#main .wrap .choose form a{
+    display:block;
+    text-decoration:underline;
+    color:aqua;
+    font-size: 13px;
+    width:50%;
+    text-align: center;
+    margin:0 auto;
+    line-height: 3;
+}
+#main .wrap .choose form p:nth-child(6) input{
     height:40px;
     width:30%;
     font-size: 20px;
@@ -82,7 +93,7 @@
     border-radius: 10px;
     transition: all 0.7s;
 }
-#main .wrap .choose form p:nth-child(4) input:hover{
+#main .wrap .choose form p:nth-child(6) input:hover{
     background-color: #fff;
     color:#000;
     cursor: pointer;

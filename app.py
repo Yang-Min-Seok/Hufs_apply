@@ -10,6 +10,7 @@ userinfo = []
 
 @app.route('/', methods=['GET', 'POST'])
 def landing():
+    
     global userinfo
 
     # 로그인 세션이 있으면
@@ -239,7 +240,7 @@ def apply():
         
         # 통과했으면,
         print('지원 완료',major,GPA)
-        flash('모의 지원이 성공적으로 완료되었습니다. 빠른 시일 내에 인증 메일을 보내 주시기 바랍니다.')
+        flash('모의 지원이 성공적으로 완료되었습니다. 빠른 시일 내에 인증 메일을 보내 주시기 바랍니다. (이미 인증이 완료된 회원은 인증 메일을 보내지 않으셔도 됩니다.)')
         
         # id 뽑기
         id = session.get('user_id')
