@@ -2,7 +2,6 @@
     
 }
 #info .wrap{
-    margin-top: 50px;
     /* 정가운데 정렬 */
     display: flex;
     flex-direction: column;
