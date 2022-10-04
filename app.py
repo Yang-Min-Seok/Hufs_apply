@@ -147,6 +147,8 @@ def landing():
 
                 # major_cnt
                 major_cnt = cursor.execute('SELECT COUNT(*) from user_info where user_major=%s',(major))
+                major_cnt = cursor.fetchall()
+                major_cnt = major_cnt[0]['COUNT(*)']
 
                 # rank 구하기
                 # 일단 패스
