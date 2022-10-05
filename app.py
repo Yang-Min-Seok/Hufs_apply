@@ -37,12 +37,23 @@ def landing():
         major_cnt = cursor.fetchall()
         major_cnt = major_cnt[0]['COUNT(*)']
 
+        # rank 구하기
+        ranking = cursor.execute('SELECT user_mail, rank() over (order by user_GPA desc) as ranking from user_info WHERE user_major=%s',(major))
+        ranking = cursor.fetchall()
+        
+        # 같은 전공에 지원한 지원자 중에서
+        for applier in ranking:
+            # mail이 같은 회원을 찾으면
+            if applier['user_mail'] == mail:
+                # rank를 할당
+                rank = applier['ranking']
+
         # mysql 닫기
         db.commit()
         db.close()
 
         # show.html로
-        return render_template('Show.html', name = name, major=major,sum=major_cnt)
+        return render_template('Show.html', name = name, major=major,sum=major_cnt,rank=rank)
     
     # 로그인 세션이 없고, POST방식으로 접근했으면,
     elif request.method == 'POST':
