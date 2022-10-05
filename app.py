@@ -253,6 +253,14 @@ def signin():
             flash('비밀번호가 맞지 않습니다.')
             return redirect('/signin')
         
+        # GPA
+        GPA = request.form['new_GPA']
+
+        # GPA 유효성 검사
+        if GPA == '' or not 0 <= float(GPA) <= 4.5:
+            print('GPA가 올바르지 않습니다.')
+            flash('GPA가 올바르지 않습니다.')
+
         # 비밀번호와 비밀번호 확인이 맞고,
         else:
             # 등록가능한 회원이면(겹치는 회원이 없으면)
@@ -267,7 +275,7 @@ def signin():
                 cursor.execute('USE hufs_apply;')
                 
                 # 회원 정보에 추가
-                cursor.execute('INSERT INTO user_info (user_mail, user_name, user_password, user_major, user_GPA) Values (%s, %s, %s, NULL, NUll)',(mail, name, password));
+                cursor.execute('INSERT INTO user_info (user_mail, user_name, user_password, user_major, user_GPA) Values (%s, %s, %s, NULL, %s)',(mail, name, password, float(GPA)));
 
                # 현재 이용자 수
                 now_user = cursor.execute('SELECT COUNT(*) FROM user_info;')
