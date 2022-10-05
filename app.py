@@ -342,22 +342,10 @@ def apply():
         # 전공
         major = request.form['major']
         
-        # GPA
-        GPA = request.form['GPA']
-
-        # GPA 유효성 검사
-        if not GPA or not 0 <= float(GPA) <= 4.5:
-            print('알맞지 않은 GPA입니다.')
-            flash('알맞지 않은 GPA입니다.')
-            
-            # 다시 apply화면으로
-            return redirect('/apply')
-        
-        GPA = float(GPA)
 
         # 통과했으면,
-        print('지원 완료', major, GPA)
-        flash('모의 지원이 성공적으로 완료되었습니다. 빠른 시일 내에 인증 메일을 보내 주시기 바랍니다. (이미 인증이 완료된 회원은 인증 메일을 보내지 않으셔도 됩니다.)')
+        print('지원 완료', major)
+        flash('모의 지원이 성공적으로 완료되었습니다.')
         
         # mail 뽑기
         mail = session.get('user_mail')
@@ -369,9 +357,6 @@ def apply():
 
         # major 업데이트
         cursor.execute('UPDATE user_info SET user_major=%s WHERE user_mail=%s', (major, mail))
-
-        # GPA 업데이트
-        cursor.execute('UPDATE user_info SET user_GPA=%s WHERE user_mail=%s', (GPA, mail))
 
         # name 뽑기
         name = cursor.execute('SELECT user_name from user_info WHERE user_mail=%s',(mail))
