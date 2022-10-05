@@ -260,6 +260,7 @@ def signin():
         if GPA == '' or not 0 <= float(GPA) <= 4.5:
             print('GPA가 올바르지 않습니다.')
             flash('GPA가 올바르지 않습니다.')
+            return redirect('/signin')
 
         # 비밀번호와 비밀번호 확인이 맞고,
         else:
