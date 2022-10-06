@@ -15,8 +15,7 @@
 
 ## 구성도
 
-![IMG_5582C45EB1D7-1](https://user-images.githubusercontent.com/83502596/193384190-756e6ccc-fe8e-4896-8c59-647a8bf86b1d.jpeg)
-
+![IMG_8B65A8B212B4-1](https://user-images.githubusercontent.com/83502596/194326930-9dd2b897-fc8f-4f63-85a8-dcf9a593560b.jpeg)
 
 
 ## 주요 기술
