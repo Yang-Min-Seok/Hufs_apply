@@ -1,0 +1,29 @@
+@media screen and (max-width:768px){ /* for typical smartphone */
+    #info{
+        
+    }
+    #info .wrap{
+
+    }
+    #info .wrap h3{
+
+    }
+    #info .wrap form{
+        width:70%;
+    }
+    #info .wrap form p{
+
+    }
+    #info .wrap form p:nth-child(6){
+        font-size:10px;
+    }
+    #info .wrap form p:nth-child(7){
+        font-size:10px;
+    }
+    #info .wrap form p input{
+
+    }
+    #info .wrap form a{
+        font-size:15px;
+    }
+}
