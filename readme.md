@@ -23,6 +23,14 @@
 ![Apply png_page-0001](https://user-images.githubusercontent.com/83502596/194328436-dca7fb03-e728-4719-8df2-420ddd47a3b2.jpg)
 ![Show png_page-0001](https://user-images.githubusercontent.com/83502596/194328498-5f95e960-43f9-4806-aa9f-75290c6fd8c0.jpg)
 
+## 스마트폰
+![res_Landing png_page-0001](https://user-images.githubusercontent.com/83502596/194328739-af5fc5d3-3dd0-4996-ba3f-c009b0c17f6b.jpg)
+![res_Signin png_page-0001](https://user-images.githubusercontent.com/83502596/194328821-ace592b6-1f23-4345-87c8-87c66ddda0b8.jpg)
+![res_Apply png_page-0001](https://user-images.githubusercontent.com/83502596/194328925-e4404f4d-40d8-4a4b-a904-dafb39df91be.jpg)
+![res_Show png_page-0001](https://user-images.githubusercontent.com/83502596/194329008-741f3978-0cb8-4cd0-921e-2ecd0167b102.jpg)
+
+## 인증메일 형식
+![example_page-0001](https://user-images.githubusercontent.com/83502596/194329123-c753047d-9a20-42cf-9d2a-9a03c8bae7c9.jpg)
 
 
 ## 주요 기술
