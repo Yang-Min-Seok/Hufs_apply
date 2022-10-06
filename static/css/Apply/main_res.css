@@ -1,0 +1,41 @@
+@media screen and (max-width:768px){ /* for typical smartphone */
+    #main{
+        
+    }
+    #main .wrap{
+
+    }
+    #main .wrap .hello{
+        display:none;
+    }
+    #main .wrap .hello h3{
+
+    }
+    #main .wrap .hello h3{
+
+    }
+    #main .wrap .choose{
+        width:100%;
+    }
+    #main .wrap .choose{
+
+    }
+    #main .wrap .choose form{
+
+    }
+    #main .wrap .choose form p{
+
+    }
+    #main .wrap .choose form p select{
+        width:50% !important;
+    }
+    #main .wrap .choose form p select option{
+        
+    }
+    #main .wrap .choose form p{
+        
+    }
+    #main .wrap .choose form p input{
+
+    }
+}
