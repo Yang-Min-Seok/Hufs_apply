@@ -3,7 +3,7 @@
 }
 #main .wrap{
     display: flex;
-    height: 800px;
+    height: 900px;
 }
 #main .wrap .hello{
     width: 50%;

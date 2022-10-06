@@ -3,7 +3,7 @@
 }
 #intro .wrap{
     display:flex;
-    height:800px;
+    height:900px;
 }
 #intro .wrap .left{
     /* 너비 절반 설정 */
