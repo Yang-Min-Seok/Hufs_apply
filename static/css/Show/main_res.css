@@ -1,0 +1,26 @@
+@media screen and (max-width:768px){ /* for typical smartphone */
+    #main{
+        
+    }
+    #main .wrap{
+        
+    }
+    #main .wrap .hello{
+        display:none;
+    }
+    #main .wrap .hello h3{
+        
+    }
+    #main .wrap .result{
+        width:100%;
+    }
+    #main .wrap .result h3{
+        
+    }
+    #main .wrap .result form{
+        
+    }
+    #main .wrap .result form p{
+        
+    }
+}
