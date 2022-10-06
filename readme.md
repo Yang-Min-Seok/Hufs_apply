@@ -18,7 +18,11 @@
 ![IMG_8B65A8B212B4-1](https://user-images.githubusercontent.com/83502596/194326930-9dd2b897-fc8f-4f63-85a8-dcf9a593560b.jpeg)
 
 ## PC
-[Landing.png.pdf](https://github.com/Yang-Min-Seok/hufs_apply/files/9725245/Landing.png.pdf)
+![Landing png_page-0001](https://user-images.githubusercontent.com/83502596/194328320-10d91ba7-ef69-4ce2-91d1-204c42bace44.jpg)
+![SIgnin png_page-0001](https://user-images.githubusercontent.com/83502596/194328355-dc9fd741-71f2-4526-97df-24f43007ad13.jpg)
+![Apply png_page-0001](https://user-images.githubusercontent.com/83502596/194328436-dca7fb03-e728-4719-8df2-420ddd47a3b2.jpg)
+![Show png_page-0001](https://user-images.githubusercontent.com/83502596/194328498-5f95e960-43f9-4806-aa9f-75290c6fd8c0.jpg)
+
 
 
 ## 주요 기술
