@@ -17,6 +17,9 @@
 
 ![IMG_8B65A8B212B4-1](https://user-images.githubusercontent.com/83502596/194326930-9dd2b897-fc8f-4f63-85a8-dcf9a593560b.jpeg)
 
+## PC
+[Landing.png.pdf](https://github.com/Yang-Min-Seok/hufs_apply/files/9725245/Landing.png.pdf)
+
 
 ## 주요 기술
 ■ Flask : Back-End 개발
