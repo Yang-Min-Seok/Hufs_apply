@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="/static/css/Show/main_res.css">
 
     <!-- js -->
-    <link rel="stylesheet" href="/static/js/show.js">
+    <script src="/static/js/show.js" async></script>
 
 </head>
 <body>
@@ -30,10 +30,10 @@
             </div>
 
             <div class="result">
-                <h3>{{ name }}님은 현재,</h3>
-                <h3>"{{ major }}"에</h3>
-                <h3>모의지원중이며,</h3>
-                <h3>총 {{ sum }}명 중, {{ rank }}등 입니다.</h3>
+                <h3 id="result_1">{{ name }}님은 현재,</h3>
+                <h3 id="result_2">"{{ major }}"에</h3>
+                <h3 id="result_3">모의지원중이며,</h3>
+                <h3 id="result_4">총 {{ sum }}명 중, {{ rank }}등 입니다.</h3>
                 <form action="/apply">
                     <p><input type="submit" value="지원학과 변경하기"></p>
                 </form>

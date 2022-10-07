@@ -35,6 +35,18 @@
     font-size: 40px;
     line-height: 1.8;
 }
+#main .wrap .result h3:nth-child(1){
+    transform: translateX(-200px);
+}
+#main .wrap .result h3:nth-child(2){
+    transform: translateX(200px);
+}
+#main .wrap .result h3:nth-child(3){
+    transform: translateX(-200px);
+}
+#main .wrap .result h3:nth-child(4){
+    transform: translateX(200px);
+}
 #main .wrap .result form:nth-child(5){
     margin-top: 50px;
 }
