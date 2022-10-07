@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="/static/css/Apply/main_res.css">
 
     <!-- js -->
-    <link rel="stylesheet" href="/static/js/apply.js">
+    <script src="/static/js/apply.js" async></script>
 
 </head>
 <body>
@@ -30,9 +30,9 @@
             </div>
 
             <div class="choose">
-                <h3>희망 학과에</h3>
-                <h3>지원해 보세요!</h3>
-                <h3>언제든 바꿀 수 있습니다!</h3>
+                <h3 id="choose_1">희망 학과에</h3>
+                <h3 id="choose_2">지원해 보세요!</h3>
+                <h3 id="choose_3">언제든 바꿀 수 있습니다!</h3>
                 <form action="/apply" method="POST"> 
                     <p> 전공 : 
                         <select name="major">
