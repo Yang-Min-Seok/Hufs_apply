@@ -353,7 +353,13 @@ def apply():
         
         # 전공
         major = request.form['major']
-        
+
+        # 아무것도 선택하지 않았을 시
+        if major == "#":
+            print('전공을 선택해 주세요.')
+            flash('전공을 선택해 주세요.')
+            # 다시 apply로
+            return redirect('/apply')
 
         # 통과했으면,
         print('지원 완료', major)
