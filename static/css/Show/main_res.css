@@ -9,13 +9,13 @@
         display:none;
     }
     #main .wrap .hello h3{
-        font-size: 20px !important;
+        
     }
     #main .wrap .result{
         width:100% !important;
     }
     #main .wrap .result h3{
-        
+        font-size: 25px !important;
     }
     #main .wrap .result form{
         
