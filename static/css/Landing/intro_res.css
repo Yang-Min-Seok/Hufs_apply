@@ -57,6 +57,6 @@
         margin-bottom: 125px;
     }
     #intro .wrap .right form:nth-child(3) p input{
-        
+        width:80% !important;
     }
 }
