@@ -33,7 +33,7 @@
         width:100%;
     }
     #intro .wrap .right h3{
-        font-size: 25px;
+        font-size: 18px;
     }
     #intro .wrap .right form{
 
@@ -45,10 +45,10 @@
         
     }
     #intro .wrap .right form:nth-child(2) p input{
-        width:50% !important;
+        width:80% !important;
     }
     #intro .wrap .right form:nth-child(2) p:nth-child(3) input{
-        width:30% !important;
+        width:80% !important;
     }
     #intro .wrap .right form:nth-child(3){
         
