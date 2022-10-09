@@ -21,7 +21,7 @@
 
     }
     #main .wrap .choose h3{
-        font-size: 25px;
+        font-size: 25px !important;
     }
     #main .wrap .choose form{
 
