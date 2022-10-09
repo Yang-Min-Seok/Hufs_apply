@@ -45,10 +45,10 @@
         
     }
     #intro .wrap .right form:nth-child(2) p input{
-        width:80% !important;
+        width:100% !important;
     }
     #intro .wrap .right form:nth-child(2) p:nth-child(3) input{
-        width:80% !important;
+        width:100% !important;
     }
     #intro .wrap .right form:nth-child(3){
         
