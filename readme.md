@@ -38,4 +38,4 @@
 
 ■ Html5, Css3, JavaScript :  Front-End 개발
 
-■ Mysql : 데이터베이스 운용  
+■ AWS e2c(Mysql) : 데이터베이스 운용  
