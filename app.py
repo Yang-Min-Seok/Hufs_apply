@@ -426,5 +426,7 @@ def apply():
         # Apply 탬플릿으로(name 들고)
         return render_template('Apply.html', name = name)
 
-# port, debug 설정
-app.run(port=5001, debug=True)
+# 플라스크 실행
+if __name__ == "__main__":
+    # port, debug 설정
+    app.run(port=5001, debug=True)
