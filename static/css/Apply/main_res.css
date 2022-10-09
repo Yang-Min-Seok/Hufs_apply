@@ -20,6 +20,9 @@
     #main .wrap .choose{
 
     }
+    #main .wrap .choose h3{
+        font-size: 25px;
+    }
     #main .wrap .choose form{
 
     }
@@ -27,7 +30,7 @@
 
     }
     #main .wrap .choose form p select{
-        width:50% !important;
+        width:80% !important;
     }
     #main .wrap .choose form p select option{
         
@@ -36,6 +39,6 @@
         
     }
     #main .wrap .choose form p input{
-
+        width: 80% !important;
     }
 }
