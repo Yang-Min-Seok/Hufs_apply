@@ -20,7 +20,7 @@ def landing():
         # mysql 연결
         db = pymysql.connect(host="hufs-apply.cnlazyly7sdf.ap-northeast-2.rds.amazonaws.com", port=3306, user="admin", password="alstjr!!98", charset="utf8")
         cursor = db.cursor(pymysql.cursors.DictCursor)
-        cursor.execute('USE hufs_apply;')
+        cursor.execute('USE hufs-apply;')
 
         # name 얻어내기
         name = cursor.execute('SELECT user_name from user_info where user_mail=%s',(mail))
@@ -66,7 +66,7 @@ def landing():
         # mysql 연결
         db = pymysql.connect(host="hufs-apply.cnlazyly7sdf.ap-northeast-2.rds.amazonaws.com", port=3306, user="admin", password="alstjr!!98", charset="utf8")
         cursor = db.cursor(pymysql.cursors.DictCursor)
-        cursor.execute('USE hufs_apply;')
+        cursor.execute('USE hufs-apply;')
 
         # 아이디 존재 여부
         is_exists = cursor.execute('SELECT EXISTS (SELECT user_name from user_info WHERE user_mail=%s) as isChk',(mail));
@@ -83,7 +83,7 @@ def landing():
             # mysql 연결
             db = pymysql.connect(host="hufs-apply.cnlazyly7sdf.ap-northeast-2.rds.amazonaws.com", port=3306, user="admin", password="alstjr!!98", charset="utf8")
             cursor = db.cursor(pymysql.cursors.DictCursor)
-            cursor.execute('USE hufs_apply;')
+            cursor.execute('USE hufs-apply;')
             
             # 진짜 비밀번호가,
             correct_password = cursor.execute('SELECT user_password from user_info where user_mail=%s',(mail));
@@ -110,7 +110,7 @@ def landing():
                 # mysql 연결
                 db = pymysql.connect(host="hufs-apply.cnlazyly7sdf.ap-northeast-2.rds.amazonaws.com", port=3306, user="admin", password="alstjr!!98", charset="utf8")
                 cursor = db.cursor(pymysql.cursors.DictCursor)
-                cursor.execute('USE hufs_apply;')
+                cursor.execute('USE hufs-apply;')
                 
                 # major 뽑기
                 major = cursor.execute('SELECT user_major from user_info where user_mail=%s',(mail))
@@ -126,7 +126,7 @@ def landing():
                     # mysql 연결
                     db = pymysql.connect(host="hufs-apply.cnlazyly7sdf.ap-northeast-2.rds.amazonaws.com", port=3306, user="admin", password="alstjr!!98", charset="utf8")
                     cursor = db.cursor(pymysql.cursors.DictCursor)
-                    cursor.execute('USE hufs_apply;')
+                    cursor.execute('USE hufs-apply;')
 
                     # name
                     name = cursor.execute('SELECT user_name from user_info where user_mail=%s',(mail))
@@ -144,7 +144,7 @@ def landing():
                 # mysql 연결
                 db = pymysql.connect(host="hufs-apply.cnlazyly7sdf.ap-northeast-2.rds.amazonaws.com", port=3306, user="admin", password="alstjr!!98", charset="utf8")
                 cursor = db.cursor(pymysql.cursors.DictCursor)
-                cursor.execute('USE hufs_apply;')
+                cursor.execute('USE hufs-apply;')
 
                 # major
                 major = cursor.execute('SELECT user_major from user_info where user_mail=%s',(mail))
@@ -199,7 +199,7 @@ def landing():
         # mysql 연결
         db = pymysql.connect(host="hufs-apply.cnlazyly7sdf.ap-northeast-2.rds.amazonaws.com", port=3306, user="admin", password="alstjr!!98", charset="utf8")
         cursor = db.cursor(pymysql.cursors.DictCursor)
-        cursor.execute('USE hufs_apply;')
+        cursor.execute('USE hufs-apply;')
 
         # 현재 이용자 수
         now_user = cursor.execute('SELECT COUNT(*) FROM user_info;')
@@ -284,7 +284,7 @@ def signin():
                 # mysql 연결
                 db = pymysql.connect(host="hufs-apply.cnlazyly7sdf.ap-northeast-2.rds.amazonaws.com", port=3306, user="admin", password="alstjr!!98", charset="utf8")
                 cursor = db.cursor(pymysql.cursors.DictCursor)
-                cursor.execute('USE hufs_apply;')
+                cursor.execute('USE hufs-apply;')
                 
                 # 회원 정보에 추가
                 cursor.execute('INSERT INTO user_info (user_mail, user_name, user_password, user_major, user_GPA) Values (%s, %s, %s, NULL, %s)',(mail, name, password, float(GPA)));
@@ -310,7 +310,7 @@ def signin():
                 # mysql 연결
                 db = pymysql.connect(host="hufs-apply.cnlazyly7sdf.ap-northeast-2.rds.amazonaws.com", port=3306, user="admin", password="alstjr!!98", charset="utf8")
                 cursor = db.cursor(pymysql.cursors.DictCursor)
-                cursor.execute('USE hufs_apply;')
+                cursor.execute('USE hufs-apply;')
 
                 # 현재 이용자 수
                 now_user = cursor.execute('SELECT COUNT(*) FROM user_info;')
@@ -371,7 +371,7 @@ def apply():
         # mysql 연결
         db = pymysql.connect(host="hufs-apply.cnlazyly7sdf.ap-northeast-2.rds.amazonaws.com", port=3306, user="admin", password="alstjr!!98", charset="utf8")
         cursor = db.cursor(pymysql.cursors.DictCursor)
-        cursor.execute('USE hufs_apply;')
+        cursor.execute('USE hufs-apply;')
 
         # major 업데이트
         cursor.execute('UPDATE user_info SET user_major=%s WHERE user_mail=%s', (major, mail))
@@ -412,7 +412,7 @@ def apply():
         # mysql 연결
         db = pymysql.connect(host="hufs-apply.cnlazyly7sdf.ap-northeast-2.rds.amazonaws.com", port=3306, user="admin", password="alstjr!!98", charset="utf8")
         cursor = db.cursor(pymysql.cursors.DictCursor)
-        cursor.execute('USE hufs_apply;')
+        cursor.execute('USE hufs-apply;')
 
         # name뽑기
         name = cursor.execute('SELECT user_name from user_info WHERE user_mail=%s',(mail))
