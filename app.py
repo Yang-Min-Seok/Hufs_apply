@@ -176,14 +176,14 @@ def landing():
             # 아이디는 맞으나, 비밀번호가 틀리면
             else:
                 print('비밀번호 오류입니다.')
-                flash('비밀번호 오류입니다.')
+                flash('비밀번호 오류입니다. 계속해서 로그인에 실패할 시 kurooru@hufs.ac.kr 로 문의해 주시기 바랍니다.')
                 # 다시 첫 페이지로
                 return redirect('/')
             
         # 기존 회원에 없으면
         else:
-            print('회원 가입이 필요합니다.')
-            flash('회원 가입이 필요합니다.')
+            print('존재하지 않는 아이디입니다.')
+            flash('존재하지 않는 아이디입니다. 계속해서 로그인에 실패할 시 kurooru@hufs.ac.kr 로 문의해 주시기 바랍니다.')
 
         # 다시 첫 페이지로
         return redirect('/')
