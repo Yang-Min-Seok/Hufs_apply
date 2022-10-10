@@ -3,7 +3,7 @@
         
     }
     #main .wrap{
-
+        height: 700px;
     }
     #main .wrap .hello{
         display:none;
