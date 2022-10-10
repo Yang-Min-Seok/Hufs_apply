@@ -5,6 +5,7 @@
     }
     #intro .wrap{
         display: block;
+        height: 700px;
     }
     #intro .wrap .left{
         width:100%;
