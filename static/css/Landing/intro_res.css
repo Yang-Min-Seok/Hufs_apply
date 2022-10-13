@@ -5,7 +5,7 @@
     }
     #intro .wrap{
         display: block;
-        height: 700px;
+        height: 350px !important;
     }
     #intro .wrap .left{
         width:100%;
@@ -16,7 +16,7 @@
         font-size: 70px;
     }
     #intro .wrap .left h3:nth-child(1){
-        margin-top: 125px;
+        margin-top: 50px;
     }
     #intro .wrap .left h3:nth-child(2){
         
@@ -55,9 +55,16 @@
         
     }
     #intro .wrap .right form:nth-child(3) p{
-        margin-bottom: 125px;
+        
     }
     #intro .wrap .right form:nth-child(3) p input{
         width:80% !important;
+        margin-bottom: 30px;
+    }
+    #intro .wrap .right p:nth-child(4){
+        display:inline;
+        color:#fff;
+        margin-bottom: 30px;
+        font-size:14px;
     }
 }
