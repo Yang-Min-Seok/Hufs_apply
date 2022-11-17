@@ -54,10 +54,21 @@
     box-sizing: border-box;
     border-radius: 10px;
 }
-#main .wrap .choose form p:nth-child(2){
-    margin-top: 20px;
+#main .wrap .choose form a:nth-child(2){
+    color: aqua;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    line-height: 3;
+    transition: all 0.7s;
 }
-#main .wrap .choose form p:nth-child(2) input{
+#main .wrap .choose form a:nth-child(2):hover{
+    color:#fff;
+}
+#main .wrap .choose form p:nth-child(3){
+    
+}
+#main .wrap .choose form p:nth-child(3) input{
     height:40px;
     width:30%;
     font-size: 20px;
@@ -67,7 +78,7 @@
     border-radius: 10px;
     transition: all 0.7s;
 }
-#main .wrap .choose form p:nth-child(2) input:hover{
+#main .wrap .choose form p:nth-child(3) input:hover{
     background-color: #fff;
     color:#000;
     cursor: pointer;
